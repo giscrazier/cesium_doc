@@ -91,7 +91,7 @@ class NavBar extends React.Component<INavBar> {
       <header className={classnames}>
         <div className="navbar-branding">
           <Link className="navbar-brand" to="/">
-              <img src={logoImg} alt="logo" /><b>福州市城区管网改扩建(修复)工程项目管理系统</b>
+              <img src={logoImg} alt="logo" /><b>CESIUM DOC</b>
           </Link>
           <span className="toggle_sidemenu_l" onClick={onCollapseLeftSide}>
             <Icon type="lines" />
