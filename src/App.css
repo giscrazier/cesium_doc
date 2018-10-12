@@ -1,0 +1,17 @@
+/*滚动条*/
+*{scrollbar-arrow-color: #fff; /*三角箭头的颜色*/
+  scrollbar-face-color: #ccc; /*立体滚动条的颜色（包括箭头部分的背景色）*/
+  scrollbar-3dlight-color: #fff; /*立体滚动条亮边的颜色*/
+  scrollbar-highlight-color: #fff; /*滚动条的高亮颜色（左阴影？）*/
+  scrollbar-shadow-color: #fff; /*立体滚动条阴影的颜色*/
+  scrollbar-darkshadow-color: #fff; /*立体滚动条外阴影的颜色*/
+  scrollbar-track-color: #fff; /*立体滚动条背景颜色*/
+  scrollbar-base-color:#fff; /*滚动条的基色*/}
+body::-webkit-scrollbar{
+  width:6px;
+  height:6px;}/*滚动条整体部分*/
+body::-webkit-scrollbar-button{ display:none/* background-color:#0CF*/}/*滚动条两端按钮*/
+body::-webkit-scrollbar-track{/* background:#ff66d5;*/ display:none}/*外层轨道*/
+body::-webkit-scrollbar-track-piece{ /*background-color:rgba(0,0,0,.5)*/ display:none}/*内层归到，滚动中间部分*/
+body::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.5); border-radius:4px;}/*滚动条里可以拖动的那部分*/
+body::-webkit-scrollbar-corner{display:none}/*边角*/

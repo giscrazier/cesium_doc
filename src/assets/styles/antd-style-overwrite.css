@@ -1,0 +1,7 @@
+/**
+ * 重写antd 的一些样式
+ * Created by 姚应龙 on 2018/8/4
+ */
+.ant-btn{
+    line-height: 1 !important;
+}

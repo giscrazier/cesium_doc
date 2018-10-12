@@ -1,0 +1,14 @@
+.ant-layout .ant-layout-header{
+    height: auto;
+    line-height: normal;
+    padding: 0;
+    background: #fff;
+}
+.clearfix {
+    zoom: 1;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
