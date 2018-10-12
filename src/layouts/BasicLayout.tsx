@@ -254,9 +254,6 @@ export default class BasicLayout extends React.Component<ILayout> {
           />
           <Content>
             <Layout className="full-layout">
-              <Header>
-                ssss
-              </Header>
               <Content className="router-page">
                 <Switch>{childRoutes}</Switch>
               </Content>
