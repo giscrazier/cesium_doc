@@ -5,3 +5,6 @@
 .ant-btn{
     line-height: 1 !important;
 }
+.ant-tabs-bar{
+    margin: 0;
+}

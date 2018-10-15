@@ -5,7 +5,10 @@ import {Switch} from 'react-router-dom';
 import BasicLayout from '../layouts/BasicLayout';
 import UserLayout from '../layouts/UserLayout';
 import {createRoutes} from "../utils/core";
-import Home from "../views/home/index";
+// import Home from "../views/home/index";
+
+import Guide from "../views/guide";
+import Doc from '../views/tabs/index';
 
 
 const routesConfig = [
@@ -16,16 +19,19 @@ const routesConfig = [
         indexRoute: config.PROJECT_NAME+'/sign/login',
         component: UserLayout,
         childRoutes: [
-            Home
+            // Home
+            Doc
         ]
     },
     {
         path: '/',
-        title: '系统中心',
+        title: '3D GIS',
         component: BasicLayout,
-        indexRoute: config.PROJECT_NAME+'/home',
+        indexRoute: config.PROJECT_NAME+'/api',
         childRoutes: [
-            Home
+            // Home
+            Doc,
+            Guide
         ]
     }
 ];

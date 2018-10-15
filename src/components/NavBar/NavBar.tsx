@@ -1,8 +1,9 @@
-import { Avatar, Badge, Popover } from 'antd';
+import {Avatar, Badge, Button, Input, Popover} from 'antd';
 import cx from 'classnames';
+import {inject, observer} from "mobx-react";
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import logoImg from '../../assets/images/logo.png';
+import Global from "../../models/global";
 // import config from '../../config';
 import Icon from "../Icon";
 import SearchBox from './SearchBox';
@@ -18,7 +19,9 @@ interface INavBar {
     toggleSidebarHeader: (event:React.SyntheticEvent)=>void;
     user: {
         userName: string;
-    }
+    },
+    global?:Global
+
 }
 
 // const doc = document as HTMLDocument;
@@ -26,6 +29,8 @@ interface INavBar {
 /**
  * 其本本局头部区域
  */
+@inject("global")
+@observer
 class NavBar extends React.Component<INavBar> {
     public static defaultProps = {
         fixed: true,
@@ -73,10 +78,19 @@ class NavBar extends React.Component<INavBar> {
     })
   };
 
+    public viewToGuide = ()=>{
+        (this.props.global as Global).getGuideMenu();
+    };
+
+    public viewToApi = ()=>{
+        (this.props.global as Global).getMenu();
+    };
+
+
     public render() {
     const { openSearchBox } = this.state;
-    const { fixed, theme, onCollapseLeftSide, collapsed,
-      onExpandTopBar, toggleSidebarHeader, user } = this.props;
+    const { fixed, theme, /*onCollapseLeftSide,*/ collapsed,
+      user } = this.props;
 
     const classnames = cx(
       'navbar',
@@ -90,31 +104,33 @@ class NavBar extends React.Component<INavBar> {
     return (
       <header className={classnames}>
         <div className="navbar-branding">
-          <Link className="navbar-brand" to="/">
+            <div className="navbar-brand" style={{width: 400}}>
+                <Input size={"large"} style={{width:380}}/>
+            </div>
+
+          {/*<Link className="navbar-brand" to="/">
               <img src={logoImg} alt="logo" /><b>CESIUM DOC</b>
           </Link>
           <span className="toggle_sidemenu_l" onClick={onCollapseLeftSide}>
             <Icon type="lines" />
-          </span>
+          </span>*/}
         </div>
         <ul className="nav navbar-nav navbar-left clearfix">
-          {collapsed ? null : (
             <li>
-              <a className="sidebar-menu-toggle" onClick={toggleSidebarHeader}>
-                <Icon type="ruby" />
-              </a>
+                <Link to="/guide" onClick={this.viewToGuide}>
+                    <Button><Icon type="ruby" /> Guide</Button>
+                </Link>
             </li>
-          )}
           <li>
-            <a onClick={onExpandTopBar}>
-              <Icon type="wand" />
-            </a>
+              <Link to={"/api"} onClick={this.viewToApi}>
+                  <Button><Icon type="wand" /> API Reference</Button>
+              </Link>
           </li>
-          {/*<li onClick={this.toggleFullScreen}>
-            <a className="request-fullscreen">
-              <Icon type="screen-full" />
-            </a>
-          </li>*/}
+          <li>
+              <Link to={"sample"}>
+                  <Button><Icon type="screen-full" /> Sample Code</Button>
+              </Link>
+          </li>
           <li className="mini-search" onClick={this.onOpenSearchBox}>
             <a>
               *<Icon type="search" antd={true} />

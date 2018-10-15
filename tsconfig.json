@@ -30,7 +30,6 @@
     "webpack",
     "jest",
     "src/setupTests.ts",
-    "bb",
-    "pages"
+    "public/pages"
   ]
 }

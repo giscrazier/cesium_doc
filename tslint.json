@@ -12,7 +12,8 @@
     "no-var-keyword":false,
     "no-var-requires": false,
     "max-classes-per-file":[true, 2, "exclude-class-expressions"],
-    "no-console":false
+    "no-console":false,
+    "jsx-no-lambda": false
   },
   "jsRules":{
     "object-literal-sort-keys":false

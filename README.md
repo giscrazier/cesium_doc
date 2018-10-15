@@ -1,5 +1,7 @@
-## 主页
-[主页](https://giscrazier.github.io/cesium_doc/)[示例]()
+## welcome
+[主页](https://giscrazier.github.io/cesium_doc/) 
+
+[示例](https://giscrazier.github.io/cesium_doc/build/)
 
 You can use the [editor on GitHub](https://github.com/giscrazier/cesium_doc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
