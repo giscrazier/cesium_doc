@@ -94,7 +94,79 @@ export async function getMenus(): Promise<IResponse> {
                     icon: 'file-text2',
                     path: "barycentricCoordinates.html"
                 },
+                {
+                    name: 'Camera',
+                    icon: 'file-text2',
+                    path: "Camera.html",
+                },
+                {
+                    name: 'clone',
+                    icon: 'file-text2',
+                    path: "clone.html",
+                },
+                {
+                    name: 'combine',
+                    icon: 'file-text2',
+                    path: "combine.html",
+                },
+                {
+                    name: 'Camera',
+                    icon: 'file-text2',
+                    path: "Camera.html",
+                },
 
+
+
+            ]
+        },
+
+        {
+            name: 'cesium/Blend',
+            icon: 'stack',
+            children: [
+                {
+                    name: 'BlendEquation',
+                    icon: 'file-text2',
+                    path: "BlendEquation.html"
+                },
+                {
+                    name: 'BlendFunction',
+                    icon: 'file-text2',
+                    path: "BlendFunction.html"
+                },
+                {
+                    name: 'BlendingState',
+                    icon: 'file-text2',
+                    path: "BlendingState.html",
+                },
+                {
+                    name: 'BlendOption',
+                    icon: 'file-text2',
+                    path: "BlendOption.html",
+                }
+
+            ]
+        },
+        {
+            name: 'cesium/Clock',
+            icon: 'stack',
+            path: 'cesium/Clock',
+            children: [
+                {
+                    name: 'Clock',
+                    icon: 'file-text2',
+                    path: "Clock.html",
+                },
+                {
+                    name: 'ClockRange',
+                    icon: 'file-text2',
+                    path: "ClockRange.html",
+                },
+                {
+                    name: 'ClockStep',
+                    icon: 'file-text2',
+                    path: "ClockStep.html",
+                },
             ]
         },
         {
@@ -112,68 +184,10 @@ export async function getMenus(): Promise<IResponse> {
                     icon: 'file-text2',
                     path: "Entity.html"
                 },
+            ]
+        },
 
-            ]
-        },
-        {
-            name: 'cesium/Animation',
-            icon: 'stack',
-            path: 'Animation',
-            children: [
-                {
-                    name: 'Animation',
-                    icon: 'file-text2',
-                    path: 'Animation.html'
-                },
-                {
-                    name: 'AnimationViewModel',
-                    icon: 'file-text2',
-                    path: 'AnimationViewModel.html'
-                }
-            ]
-        },
-        {
-            name: 'cesium/Appearance',
-            icon: 'stack',
-            path: 'cesium/Appearance',
-            children: [
-                {
-                    name: 'Appearance',
-                    icon: 'file-text2',
-                    path: "Appearance.html"
-                },
-                {
-                    name: 'DebugAppearance',
-                    icon: 'file-text2',
-                    path: "DebugAppearance.html"
-                },
-                {
-                    name: 'EllipsoidSurfaceAppearance',
-                    icon: 'file-text2',
-                    path: "EllipsoidSurfaceAppearance.html"
-                },
-                {
-                    name: 'MaterialAppearance',
-                    icon: 'file-text2',
-                    path: "MaterialAppearance.html"
-                },
-                {
-                    name: 'PerInstanceColorAppearance',
-                    icon: 'file-text2',
-                    path: "PerInstanceColorAppearance.html"
-                },
-                {
-                    name: 'PolylineColorAppearance',
-                    icon: 'file-text2',
-                    path: "PolylineColorAppearance.html"
-                },
-                {
-                    name: 'PolylineMaterialAppearance',
-                    icon: 'file-text2',
-                    path: "PolylineMaterialAppearance.html"
-                }
-            ]
-        },
+
         {
             name: 'cesium/Bounding',
             icon: 'stack',
@@ -205,6 +219,7 @@ export async function getMenus(): Promise<IResponse> {
         {
             name: 'cesium/Collection',
             icon: 'stack',
+            path: 'cesium/Collection',
             children: [
                 {
                     name: 'BillboardCollection',
@@ -285,8 +300,37 @@ export async function getMenus(): Promise<IResponse> {
             ]
         },
         {
+            name: 'cesium/color',
+            icon: 'stack',
+            path: 'cesium/color',
+            children: [
+                {
+                    name: 'Color',
+                    icon: 'file-text2',
+                    path: "Color.html"
+                },
+                {
+                    name: 'Cesium3DTileColorBlendMode',
+                    icon: 'file-text2',
+                    path: "Cesium3DTileColorBlendMode.html"
+                },
+                {
+                    name: 'ColorBlendMode',
+                    icon: 'file-text2',
+                    path: "ColorBlendMode.html"
+                },
+                {
+                    name: 'ColorMaterialProperty',
+                    icon: 'file-text2',
+                    path: "ColorMaterialProperty.html"
+                },
+
+            ]
+        },
+        {
             name: 'cesium/DataSource',
             icon: 'stack',
+            path: 'cesium/DataSource',
             children: [
                 {
                     name: 'DataSource',
@@ -332,10 +376,42 @@ export async function getMenus(): Promise<IResponse> {
 
             ]
         },
-
+        {
+            name: 'cesium/Emitter',
+            icon: 'stack',
+            path: 'cesium/Emitter',
+            children: [
+                {
+                    name: 'BoxEmitter',
+                    icon: 'file-text2',
+                    path: "BoxEmitter.html",
+                },
+                {
+                    name: 'CircleEmitter',
+                    icon: 'file-text2',
+                    path: "CircleEmitter.html",
+                },
+                {
+                    name: 'ConeEmitter',
+                    icon: 'file-text2',
+                    path: "ConeEmitter.html",
+                },
+                {
+                    name: 'ParticleEmitter',
+                    icon: 'file-text2',
+                    path: "ParticleEmitter.html",
+                },
+                {
+                    name: 'SphereEmitter',
+                    icon: 'file-text2',
+                    path: "SphereEmitter.html",
+                }
+            ]
+        },
         {
             name: 'cesium/geometry',
             icon: 'stack',
+            path: 'cesium/geometry',
             children: [
                 {
                     name: 'Geometry',
@@ -367,11 +443,7 @@ export async function getMenus(): Promise<IResponse> {
                     icon: 'file-text2',
                     path: "CircleGeometry.html"
                 },
-                {
-                    name: 'ColorGeometryInstanceAttribute',
-                    icon: 'file-text2',
-                    path: "ColorGeometryInstanceAttribute.html"
-                },
+
                 {
                     name: 'CoplanarPolygonGeometry',
                     icon: 'file-text2',
@@ -412,11 +484,7 @@ export async function getMenus(): Promise<IResponse> {
                     icon: 'file-text2',
                     path: "CylinderOutlineGeometry.html"
                 },
-                {
-                    name: 'DistanceDisplayConditionGeometryInstanceAttribute',
-                    icon: 'file-text2',
-                    path: "DistanceDisplayConditionGeometryInstanceAttribute.html"
-                },
+
                 {
                     name: 'EllipseGeometry',
                     icon: 'file-text2',
@@ -457,26 +525,13 @@ export async function getMenus(): Promise<IResponse> {
                     icon: 'file-text2',
                     path: "FrustumOutlineGeometry.html"
                 },
-                {
-                    name: 'GeometryAttribute',
-                    icon: 'file-text2',
-                    path: "GeometryAttribute.html",
-                },
-                {
-                    name: 'GeometryAttributes',
-                    icon: 'file-text2',
-                    path: "GeometryAttributes.html"
-                },
+
                 {
                     name: 'GeometryInstance',
                     icon: 'file-text2',
                     path: "GeometryInstance.html"
                 },
-                {
-                    name: 'GeometryInstanceAttribute',
-                    icon: 'file-text2',
-                    path: "GeometryInstanceAttribute.html"
-                },
+
                 {
                     name: 'GeometryPipeline',
                     icon: 'file-text2',
@@ -562,11 +617,7 @@ export async function getMenus(): Promise<IResponse> {
                     icon: 'file-text2',
                     path: "RectangleOutlineGeometry.html"
                 },
-                {
-                    name: 'ShowGeometryInstanceAttribute',
-                    icon: 'file-text2',
-                    path: "ShowGeometryInstanceAttribute.html"
-                },
+
                 {
                     name: 'SimplePolylineGeometry',
                     icon: 'file-text2',
@@ -602,6 +653,7 @@ export async function getMenus(): Promise<IResponse> {
         {
             name: 'cesium/graphic',
             icon: 'stack',
+            path: 'cesium/graphic',
             children: [
                 {
                     name: 'BillboardGraphics',
@@ -692,8 +744,101 @@ export async function getMenus(): Promise<IResponse> {
         },
 
         {
+            name: 'cesium/mapStyle',
+            icon: 'stack',
+            path: 'cesium/mapStyle',
+            children: [
+                {
+                    name: 'StyleExpression',
+                    icon: 'file-text2',
+                    path: "StyleExpression.html",
+                },
+                {
+                    name: 'BingMapsStyle',
+                    icon: 'file-text2',
+                    path: "BingMapsStyle.html"
+                },
+                {
+                    name: 'Cesium3DTileStyle',
+                    icon: 'file-text2',
+                    path: "Cesium3DTileStyle.html",
+                },
+                {
+                    name: 'IonWorldImageryStyle',
+                    icon: 'file-text2',
+                    path: "IonWorldImageryStyle.html",
+                },
+                {
+                    name: 'LabelStyle',
+                    icon: 'file-text2',
+                    path: "LabelStyle.html"
+                }
+
+            ]
+        },
+
+        {
+            name: 'cesium/MaterialProperty',
+            icon: 'stack',
+            path: 'cesium/MaterialProperty',
+            children: [
+                {
+                    name: 'MaterialProperty',
+                    icon: 'file-text2',
+                    path: "MaterialProperty.html",
+                },
+                {
+                    name: 'CheckerboardMaterialProperty',
+                    icon: 'file-text2',
+                    path: "CheckerboardMaterialProperty.html"
+                },
+                {
+                    name: 'CompositeMaterialProperty',
+                    icon: 'file-text2',
+                    path: "CompositeMaterialProperty.html"
+                },
+                {
+                    name: 'GridMaterialProperty',
+                    icon: 'file-text2',
+                    path: "GridMaterialProperty.html"
+                },
+                {
+                    name: 'ImageMaterialProperty',
+                    icon: 'file-text2',
+                    path: "ImageMaterialProperty.html",
+                },
+                {
+                    name: 'PolylineArrowMaterialProperty',
+                    icon: 'file-text2',
+                    path: "PolylineArrowMaterialProperty.html"
+                },
+                {
+                    name: 'PolylineDashMaterialProperty',
+                    icon: 'file-text2',
+                    path: "PolylineDashMaterialProperty.html",
+                },
+                {
+                    name: 'PolylineGlowMaterialProperty',
+                    icon: 'file-text2',
+                    path: "PolylineGlowMaterialProperty.html",
+                },
+                {
+                    name: 'PolylineOutlineMaterialProperty',
+                    icon: 'file-text2',
+                    path: "PolylineOutlineMaterialProperty.html",
+                },
+                {
+                    name: 'StripeMaterialProperty',
+                    icon: 'file-text2',
+                    path: "StripeMaterialProperty.html",
+                }
+            ]
+        },
+
+        {
             name: 'cesium/primitive',
             icon: 'stack',
+            path: 'cesium/primitive',
             children: [
                 {
                     name: 'Primitive',
@@ -732,6 +877,21 @@ export async function getMenus(): Promise<IResponse> {
                 }
             ]
         },
+
+        {
+            name: 'cesium/providerSupport',
+            icon: 'stack',
+            path: 'cesium/providerSupport',
+            children: [
+                {
+                    name: 'BingMapsApi',
+                    icon: 'file-text2',
+                    path: "BingMapsApi.html"
+                },
+
+            ]
+        },
+
         {
             name:'cesium/Provider',
             icon:'stack',
@@ -856,8 +1016,105 @@ export async function getMenus(): Promise<IResponse> {
             ]
         },
         {
+            name: 'cesium/Shader/Attribute',
+            icon: 'stack',
+            path: 'cesium/Shader/Attribute',
+            children: [
+                {
+                    name: 'ColorGeometryInstanceAttribute',
+                    icon: 'file-text2',
+                    path: "ColorGeometryInstanceAttribute.html"
+                },
+                {
+                    name: 'DistanceDisplayConditionGeometryInstanceAttribute',
+                    icon: 'file-text2',
+                    path: "DistanceDisplayConditionGeometryInstanceAttribute.html"
+                },
+                {
+                    name: 'GeometryAttribute',
+                    icon: 'file-text2',
+                    path: "GeometryAttribute.html",
+                },
+                {
+                    name: 'GeometryAttributes',
+                    icon: 'file-text2',
+                    path: "GeometryAttributes.html"
+                },
+                {
+                    name: 'GeometryInstanceAttribute',
+                    icon: 'file-text2',
+                    path: "GeometryInstanceAttribute.html"
+                },
+                {
+                    name: 'ShowGeometryInstanceAttribute',
+                    icon: 'file-text2',
+                    path: "ShowGeometryInstanceAttribute.html"
+                }
+            ]
+        },
+        {
+            name: 'cesium/Shader/Appearance',
+            icon: 'stack',
+            path: 'cesium/Shader/Appearance',
+            children: [
+                {
+                    name: 'Appearance',
+                    icon: 'file-text2',
+                    path: "Appearance.html"
+                },
+                {
+                    name: 'DebugAppearance',
+                    icon: 'file-text2',
+                    path: "DebugAppearance.html"
+                },
+                {
+                    name: 'EllipsoidSurfaceAppearance',
+                    icon: 'file-text2',
+                    path: "EllipsoidSurfaceAppearance.html"
+                },
+                {
+                    name: 'MaterialAppearance',
+                    icon: 'file-text2',
+                    path: "MaterialAppearance.html"
+                },
+                {
+                    name: 'PerInstanceColorAppearance',
+                    icon: 'file-text2',
+                    path: "PerInstanceColorAppearance.html"
+                },
+                {
+                    name: 'PolylineColorAppearance',
+                    icon: 'file-text2',
+                    path: "PolylineColorAppearance.html"
+                },
+                {
+                    name: 'PolylineMaterialAppearance',
+                    icon: 'file-text2',
+                    path: "PolylineMaterialAppearance.html"
+                }
+            ]
+        },
+        {
+            name: 'cesium/Shader/Material',
+            icon: 'stack',
+            path: 'cesium/Shader/Material',
+            children: [
+                {
+                    name: 'Material',
+                    icon: 'file-text2',
+                    path: "Material.html",
+                },
+                {
+                    name: 'ModelMaterial',
+                    icon: 'file-text2',
+                    path: "ModelMaterial.html",
+                },
+            ]
+        },
+        {
             name: 'cesium/type',
             icon: 'stack',
+            path: 'cesium/type',
             children: [
                 {
                     name: 'PrimitiveType',
@@ -908,9 +1165,41 @@ export async function getMenus(): Promise<IResponse> {
             ]
         },
         {
+            name: 'cesium/webservice',
+            icon: 'stack',
+            path: 'cesium/webservice',
+            children: [
+                {
+                    name: 'BingMapsGeocoderService',
+                    icon: 'file-text2',
+                    path: "BingMapsGeocoderService.html"
+                },
+                {
+                    name: 'GeocoderService',
+                    icon: 'file-text2',
+                    path: "GeocoderService.html"
+                },
+                {
+                    name: 'IonGeocoderService',
+                    icon: 'file-text2',
+                    path: "IonGeocoderService.html"
+                },
+                {
+                    name: 'OpenCageGeocoderService',
+                    icon: 'file-text2',
+                    path: "OpenCageGeocoderService.html",
+                },
+                {
+                    name: 'PeliasGeocoderService',
+                    icon: 'file-text2',
+                    path: "PeliasGeocoderService.html"
+                }
+            ]
+        },
+        {
             name:"cesium/ViewModel",
             icon:'stack',
-            path:"ViewModel",
+            path:"cesium/ViewModel",
             children:[
                 {
                     name:'ProviderViewModel',
@@ -977,12 +1266,18 @@ export async function getMenus(): Promise<IResponse> {
                     name:'VRButtonViewModel',
                     icon:'file-text2',
                     path:"VRButtonViewModel.html"
+                },
+                {
+                    name: 'AnimationViewModel',
+                    icon: 'file-text2',
+                    path: 'AnimationViewModel.html'
                 }
             ]
         },
         {
             name: 'cesium/Visualizer',
             icon: 'stack',
+            path: 'cesium/Visualizer',
             children: [
                 {
                     name: 'Visualizer',
@@ -1033,6 +1328,16 @@ export async function getMenus(): Promise<IResponse> {
             path: 'cesium/widget',
             children: [
                 {
+                    name: 'CesiumWidget',
+                    icon: 'file-text2',
+                    path: "CesiumWidget.html",
+                },
+                {
+                    name: 'Animation',
+                    icon: 'file-text2',
+                    path: 'Animation.html'
+                },
+                {
                     name: 'BaseLayerPicker',
                     icon: 'file-text2',
                     path: "BaseLayerPicker.html"
@@ -1047,7 +1352,76 @@ export async function getMenus(): Promise<IResponse> {
                     icon: 'file-text2',
                     path: "SceneModePicker.html"
                 },
-
+                {
+                    name:'Timeline',
+                    icon:'file-text2',
+                    path:"Timeline.html",
+                },
+                {
+                    name:'VRButton',
+                    icon:'file-text2',
+                    path:"VRButton.html",
+                },
+                {
+                    name:'CesiumInspector',
+                    icon:'file-text2',
+                    path:"CesiumInspector.html",
+                },
+                {
+                    name:'FullscreenButton',
+                    icon:'file-text2',
+                    path:"FullscreenButton.html",
+                },
+                {
+                    name:'Geocoder',
+                    icon:'file-text2',
+                    path:"Geocoder.html",
+                },
+                {
+                    name:'HomeButton',
+                    icon:'file-text2',
+                    path:"HomeButton.html",
+                },
+                {
+                    name:'InfoBox',
+                    icon:'file-text2',
+                    path:"InfoBox.html",
+                },
+                {
+                    name:'NavigationHelpButton',
+                    icon:'file-text2',
+                    path:"NavigationHelpButton.html",
+                },
+                {
+                    name:'PerformanceWatchdog',
+                    icon:'file-text2',
+                    path:"PerformanceWatchdog.html",
+                },
+                {
+                    name:'SelectionIndicator',
+                    icon:'file-text2',
+                    path:"SelectionIndicator.html",
+                },
+                {
+                    name:'SelectionIndicator',
+                    icon:'file-text2',
+                    path:"SelectionIndicator.html",
+                },
+                {
+                    name: 'Command',
+                    icon: 'file-text2',
+                    path: "Command.html",
+                },
+                {
+                    name: 'createCommand',
+                    icon: 'file-text2',
+                    path: "createCommand.html",
+                },
+                {
+                    name: 'SvgPathBindingHandler',
+                    icon: 'file-text2',
+                    path: "SvgPathBindingHandler.html",
+                }
             ]
         },
         {
@@ -1072,15 +1446,41 @@ export async function getMenus(): Promise<IResponse> {
                 },
             ]
         },
+        {
+            name: 'cesium/widget/Viewer',
+            icon: 'stack',
+            path: 'cesium/widget/Viewer',
+            children: [
+                {
+                    name:'Viewer',
+                    icon:'file-text2',
+                    path:"Viewer.html",
+                },
+                {
+                    name:'viewerCesium3DTilesInspectorMixin',
+                    icon:'file-text2',
+                    path:"viewerCesium3DTilesInspectorMixin.html",
+                },
+                {
+                    name:'viewerCesiumInspectorMixin',
+                    icon:'file-text2',
+                    path:"viewerCesiumInspectorMixin.html",
+                },
+                {
+                    name:'viewerDragDropMixin',
+                    icon:'file-text2',
+                    path:"viewerDragDropMixin.html",
+                },
+                {
+                    name:'viewerPerformanceWatchdogMixin',
+                    icon:'file-text2',
+                    path:"viewerPerformanceWatchdogMixin.html",
+                }
+            ]
+        },
 
     ];
-    /*const data = [
-        "Appearance.html", "ArcGisMapServerImageryProvider.html", "AssociativeArray.html", "AxisAlignedBoundingBox.html", "barycentricCoordinates.html", "BaseLayerPicker.html", "BaseLayerPickerViewModel.html", "Billboard.html", "BillboardCollection.html", "BillboardGraphics.html", "BillboardVisualizer.html", "binarySearch.html", "BingMapsApi.html", "BingMapsGeocoderService.html", "BingMapsImageryProvider.html", "BingMapsStyle.html", "BlendEquation.html", "BlendFunction.html", "BlendingState.html", "BlendOption.html", "BoundingRectangle.html", "BoundingSphere.html", "BoxEmitter.html", "BoxGeometry.html", "BoxGeometryUpdater.html", "BoxGraphics.html", "BoxOutlineGeometry.html", "CallbackProperty.html", "Camera.html", "CameraEventAggregator.html", "CameraEventType.html", "cancelAnimationFrame.html", "Cartesian2.html", "Cartesian3.html", "Cartesian4.html", "Cartographic.html", "CartographicGeocoderService.html", "CatmullRomSpline.html", "Cesium3DTile.html", "Cesium3DTileColorBlendMode.html", "Cesium3DTileContent.html", "Cesium3DTileFeature.html", "Cesium3DTilePointFeature.html", "Cesium3DTileset.html", "Cesium3DTilesInspector.html", "Cesium3DTilesInspectorViewModel.html", "Cesium3DTileStyle.html", "CesiumInspector.html", "CesiumInspectorViewModel.html", "CesiumTerrainProvider.html", "CesiumWidget.html", "CheckerboardMaterialProperty.html", "CircleEmitter.html", "CircleGeometry.html", "ClippingPlaneCollection.html", "Clock.html", "ClockRange.html", "ClockStep.html", "ClockViewModel.html", "clone.html", "Color.html", "ColorBlendMode.html", "ColorGeometryInstanceAttribute.html", "ColorMaterialProperty.html", "combine.html", "Command.html", "ComponentDatatype.html", "CompositeEntityCollection.html", "CompositeMaterialProperty.html", "CompositePositionProperty.html", "CompositeProperty.html", "CompressedTextureBuffer.html", "ConditionsExpression.html", "ConeEmitter.html", "ConstantPositionProperty.html", "ConstantProperty.html", "CoplanarPolygonGeometry.html", "CoplanarPolygonOutlineGeometry.html", "CornerType.html", "CorridorGeometry.html", "CorridorGeometryUpdater.html", "CorridorGraphics.html", "CorridorOutlineGeometry.html", "createCommand.html", "createGuid.html", "createOpenStreetMapImageryProvider.html", "createTangentSpaceDebugPrimitive.html", "createTaskProcessorWorker.html", "createTileMapServiceImageryProvider.html", "createWorldImagery.html", "createWorldTerrain.html", "Credit.html", "CreditDisplay.html", "CubicRealPolynomial.html", "CullFace.html", "CullingVolume.html", "CustomDataSource.html", "CylinderGeometry.html", "CylinderGeometryUpdater.html", "CylinderGraphics.html", "CylinderOutlineGeometry.html", "CzmlDataSource.html", "DataSource.html", "DataSourceClock.html", "DataSourceCollection.html", "DataSourceDisplay.html", "DebugAppearance.html", "DebugCameraPrimitive.html", "DebugModelMatrixPrimitive.html", "DefaultProxy.html", "defaultValue.html", "defined.html", "DepthFunction.html", "destroyObject.html", "DeveloperError.html", "DiscardMissingTileImagePolicy.html", "DistanceDisplayCondition.html", "DistanceDisplayConditionGeometryInstanceAttribute.html", "EasingFunction.html", "EllipseGeometry.html", "EllipseGeometryUpdater.html", "EllipseGraphics.html", "EllipseOutlineGeometry.html", "Ellipsoid.html", "EllipsoidGeodesic.html", "EllipsoidGeometry.html", "EllipsoidGeometryUpdater.html", "EllipsoidGraphics.html", "EllipsoidOutlineGeometry.html", "EllipsoidSurfaceAppearance.html", "EllipsoidTangentPlane.html", "EllipsoidTerrainProvider.html", "Entity.html", "EntityCluster.html", "EntityCollection.html", "EntityView.html", "Event.html", "EventHelper.html", "Expression.html", "ExtrapolationType.html", "FeatureDetection.html", "Fog.html", "formatError.html", "FrameRateMonitor.html", "FrustumGeometry.html", "FrustumOutlineGeometry.html", "Fullscreen.html", "FullscreenButton.html", "FullscreenButtonViewModel.html", "Geocoder.html", "GeocoderService.html", "GeocoderViewModel.html", "GeocodeType.html", "GeographicProjection.html", "GeographicTilingScheme.html", "GeoJsonDataSource.html", "Geometry.html", "GeometryAttribute.html", "GeometryAttributes.html", "GeometryInstance.html", "GeometryInstanceAttribute.html", "GeometryPipeline.html", "GeometryUpdater.html", "GeometryVisualizer.html", "getAbsoluteUri.html", "getBaseUri.html", "getExtensionFromUri.html", "GetFeatureInfoFormat.html", "getFilenameFromUri.html", "getImagePixels.html", "getTimestamp.html", "Globe.html", "GoogleEarthEnterpriseImageryProvider.html", "GoogleEarthEnterpriseMapsProvider.html", "GoogleEarthEnterpriseMetadata.html", "GoogleEarthEnterpriseTerrainData.html", "GoogleEarthEnterpriseTerrainProvider.html", "GregorianDate.html", "GridImageryProvider.html", "GridMaterialProperty.html", "GroundPolylineGeometry.html", "GroundPolylinePrimitive.html", "GroundPrimitive.html", "HeadingPitchRange.html", "HeadingPitchRoll.html", "HeightmapTerrainData.html", "HeightReference.html", "HermitePolynomialApproximation.html", "HermiteSpline.html", "HomeButton.html", "HomeButtonViewModel.html", "HorizontalOrigin.html", "ImageMaterialProperty.html", "ImageryLayer.html", "ImageryLayerCollection.html", "ImageryLayerFeatureInfo.html", "ImageryProvider.html", "ImagerySplitDirection.html", "IndexDatatype.html", "InfoBox.html", "InfoBoxViewModel.html", "InterpolationAlgorithm.html", "Intersect.html", "Intersections2D.html", "IntersectionTests.html", "Interval.html", "Ion.html", "IonGeocoderService.html", "IonImageryProvider.html", "IonResource.html", "IonWorldImageryStyle.html", "isArray.html", "isLeapYear.html", "Iso8601.html", "JulianDate.html", "KeyboardEventModifier.html", "KmlCamera.html", "KmlDataSource.html", "KmlFeatureData.html", "KmlLookAt.html", "KmlTour.html", "KmlTourFlyTo.html", "KmlTourWait.html", "Label.html", "LabelCollection.html", "LabelGraphics.html", "LabelStyle.html", "LabelVisualizer.html", "LagrangePolynomialApproximation.html", "LeapSecond.html", "LinearApproximation.html", "LinearSpline.html", "loadCRN.html", "loadKTX.html", "MapboxImageryProvider.html", "MapMode2D.html", "MapProjection.html", "Material.html", "MaterialAppearance.html", "MaterialProperty.html", "Math.html", "Matrix2.html", "Matrix3.html", "Matrix4.html", "mergeSort.html", "Model.html", "ModelAnimation.html", "ModelAnimationCollection.html", "ModelAnimationLoop.html", "ModelGraphics.html", "ModelMaterial.html", "ModelMesh.html", "ModelNode.html", "ModelVisualizer.html", "Moon.html", "NavigationHelpButton.html", "NavigationHelpButtonViewModel.html", "NearFarScalar.html", "NeverTileDiscardPolicy.html", "NodeTransformationProperty.html", "objectToQuery.html", "Occluder.html", "OpenCageGeocoderService.html", "OrientedBoundingBox.html", "OrthographicFrustum.html", "OrthographicOffCenterFrustum.html", "Packable.html", "PackableForInterpolation.html", "Particle.html", "ParticleBurst.html", "ParticleEmitter.html", "ParticleSystem.html", "PathGraphics.html", "PathVisualizer.html", "PeliasGeocoderService.html", "PerformanceWatchdog.html", "PerformanceWatchdogViewModel.html", "PerInstanceColorAppearance.html", "PerspectiveFrustum.html", "PerspectiveOffCenterFrustum.html", "PinBuilder.html", "PixelFormat.html", "Plane.html", "PlaneGeometry.html", "PlaneGeometryUpdater.html", "PlaneGraphics.html", "PlaneOutlineGeometry.html", "PointCloudShading.html", "PointGraphics.html", "pointInsideTriangle.html", "PointPrimitive.html", "PointPrimitiveCollection.html", "PointVisualizer.html", "PolygonGeometry.html", "PolygonGeometryUpdater.html", "PolygonGraphics.html", "PolygonHierarchy.html", "PolygonOutlineGeometry.html", "Polyline.html", "PolylineArrowMaterialProperty.html", "PolylineCollection.html", "PolylineColorAppearance.html", "PolylineDashMaterialProperty.html", "PolylineGeometry.html", "PolylineGeometryUpdater.html", "PolylineGlowMaterialProperty.html", "PolylineGraphics.html", "PolylineMaterialAppearance.html", "PolylineOutlineMaterialProperty.html", "PolylineVisualizer.html", "PolylineVolumeGeometry.html", "PolylineVolumeGeometryUpdater.html", "PolylineVolumeGraphics.html", "PolylineVolumeOutlineGeometry.html", "PositionProperty.html", "PositionPropertyArray.html", "PostProcessStage.html", "PostProcessStageCollection.html", "PostProcessStageComposite.html", "PostProcessStageLibrary.html", "PostProcessStageSampleMode.html", "Primitive.html", "PrimitiveCollection.html", "PrimitiveType.html", "ProjectionPicker.html", "ProjectionPickerViewModel.html", "Property.html", "PropertyArray.html", "PropertyBag.html", "ProviderViewModel.html", "QuadraticRealPolynomial.html", "QuantizedMeshTerrainData.html", "QuarticRealPolynomial.html", "Quaternion.html", "QuaternionSpline.html", "queryToObject.html", "Queue.html", "Ray.html", "Rectangle.html", "RectangleGeometry.html", "RectangleGeometryUpdater.html", "RectangleGraphics.html", "RectangleOutlineGeometry.html", "ReferenceFrame.html", "ReferenceProperty.html", "Request.html", "requestAnimationFrame.html", "RequestErrorEvent.html", "RequestState.html", "RequestType.html", "Resource.html", "Rotation.html", "RuntimeError.html", "SampledPositionProperty.html", "SampledProperty.html", "sampleTerrain.html", "sampleTerrainMostDetailed.html", "Scene.html", "SceneMode.html", "SceneModePicker.html", "SceneModePickerViewModel.html", "SceneTransforms.html", "ScreenSpaceCameraController.html", "ScreenSpaceEventHandler.html", "ScreenSpaceEventType.html", "SelectionIndicator.html", "SelectionIndicatorViewModel.html", "ShadowMap.html", "ShadowMode.html", "ShowGeometryInstanceAttribute.html", "Simon1994PlanetaryPositions.html", "SimplePolylineGeometry.html", "SingleTileImageryProvider.html", "SkyAtmosphere.html", "SkyBox.html", "SphereEmitter.html", "SphereGeometry.html", "SphereOutlineGeometry.html", "Spherical.html", "Spline.html", "StencilFunction.html", "StencilOperation.html", "StripeMaterialProperty.html", "StripeOrientation.html", "StyleExpression.html", "subdivideArray.html", "Sun.html", "SvgPathBindingHandler.html", "TaskProcessor.html", "TerrainData.html", "TerrainProvider.html", "TextureMagnificationFilter.html", "TextureMinificationFilter.html", "TileAvailability.html", "TileCoordinatesImageryProvider.html", "TileDiscardPolicy.html", "TileProviderError.html", "TilingScheme.html", "TimeDynamicImagery.html", "TimeDynamicPointCloud.html", "TimeInterval.html", "TimeIntervalCollection.html", "TimeIntervalCollectionPositionProperty.html", "TimeIntervalCollectionProperty.html", "Timeline.html", "TimeStandard.html", "ToggleButtonViewModel.html", "Transforms.html", "TranslationRotationScale.html", "TridiagonalSystemSolver.html", "TrustedServers.html", "UrlTemplateImageryProvider.html", "VelocityOrientationProperty.html", "VelocityVectorProperty.html", "VertexFormat.html", "VerticalOrigin.html", "VideoSynchronizer.html", "Viewer.html", "viewerCesium3DTilesInspectorMixin.html", "viewerCesiumInspectorMixin.html", "viewerDragDropMixin.html", "viewerPerformanceWatchdogMixin.html", "ViewportQuad.html", "Visibility.html", "Visualizer.html", "VRButton.html", "VRButtonViewModel.html", "VRTheWorldTerrainProvider.html", "WallGeometry.html", "WallGeometryUpdater.html", "WallGraphics.html", "WallOutlineGeometry.html", "WebGLConstants.html", "WebMapServiceImageryProvider.html", "WebMapTileServiceImageryProvider.html", "WebMercatorProjection.html", "WebMercatorTilingScheme.html", "WeightSpline.html", "WindingOrder.html"
-    ].map(d=>({
-        name: d.replace(".html",""),
-        icon:'stack',
-        path:`${d}`
-    }));*/
+
     // @ts-ignore
     // menus.push(...data);
     return {
