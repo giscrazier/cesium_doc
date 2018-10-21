@@ -13,7 +13,8 @@
     "no-var-requires": false,
     "max-classes-per-file":[true, 2, "exclude-class-expressions"],
     "no-console":false,
-    "jsx-no-lambda": false
+    "jsx-no-lambda": false,
+    "prefer-const": false
   },
   "jsRules":{
     "object-literal-sort-keys":false

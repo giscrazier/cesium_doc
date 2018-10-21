@@ -4,15 +4,15 @@ import {inject, observer} from 'mobx-react';
 import * as React from 'react';
 import {Switch} from 'react-router-dom';
 import NavBar from '../components/NavBar';
-import {LeftSideBar/*, RightSideBar*/} from '../components/SideBar';
+import {LeftSideBar} from '../components/SideBar';
 import $$ from '../l-utils';
-// import ElementQueries from 'css-element-queries/src/ElementQueries';
-import './styles/basic.less';
-// import PageLoading from '../components/Loading/PageLoading';
-
 import {IMenu} from "../models/global";
 import TabsModel from "../views/tabs/models";
 import ILayout from "./ILayout";
+// import ElementQueries from 'css-element-queries/src/ElementQueries';
+import './styles/basic.less';
+
+// import PageLoading from '../components/Loading/PageLoading';
 
 interface IBasicLayout extends ILayout{
     tabs?: TabsModel
@@ -222,7 +222,7 @@ export default class BasicLayout extends React.Component<IBasicLayout> {
         } = this.state;
 
         const {routerData, location, global} = this.props;
-        const {menu, flatMenu} = global;
+        let {menu, flatMenu} = global;
 
         const {childRoutes} = routerData;
 
@@ -235,6 +235,10 @@ export default class BasicLayout extends React.Component<IBasicLayout> {
             'hided-breadcrumbs':
                 theme.layout && theme.layout.indexOf('hidedBreadcrumbs') !== -1
         });
+
+        if (this.props.global.searchStr.length > 0) {
+            menu = flatMenu.filter((f:IMenu)=>f.path.startsWith(this.props.global.searchStr));
+        }
 
         return (
             // this.state.isCheckingSession? <PageLoading loading={true}/> :

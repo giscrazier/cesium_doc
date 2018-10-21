@@ -2,7 +2,7 @@ import {Avatar, Badge, Button, Input, Popover} from 'antd';
 import cx from 'classnames';
 import {inject, observer} from "mobx-react";
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Global from "../../models/global";
 // import config from '../../config';
 import Icon from "../Icon";
@@ -40,6 +40,8 @@ class NavBar extends React.Component<INavBar> {
   public state = {
     openSearchBox: false,
   };
+
+  public inputRef = React.createRef<Input>();
 
 /*  toggleFullScreen() {
     if (!document.fullscreenElement &&
@@ -105,7 +107,7 @@ class NavBar extends React.Component<INavBar> {
       <header className={classnames}>
         <div className="navbar-branding">
             <div className="navbar-brand" style={{width: 400}}>
-                <Input size={"large"} style={{width:380}}/>
+                <Input ref={this.inputRef} size={"large"} style={{width:380}} onChange={this.search}/>
             </div>
 
           {/*<Link className="navbar-brand" to="/">
@@ -168,6 +170,12 @@ class NavBar extends React.Component<INavBar> {
         <SearchBox visible={openSearchBox} onClose={this.onCloseSearchBox} />
       </header>
     );
+  }
+
+  private search  = (e:React.SyntheticEvent)=>{
+        const searchStr = (e.currentTarget as HTMLInputElement).value;
+        // @ts-ignore
+        this.props.global.setSearchStr(searchStr);
   }
 }
 
