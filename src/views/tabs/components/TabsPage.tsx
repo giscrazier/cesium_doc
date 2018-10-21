@@ -5,7 +5,7 @@ import { Tabs } from 'antd';
 // import {TabPaneProps} from "antd/lib/tabs";
 import {inject, observer} from "mobx-react";
 import * as React from 'react';
-import APP_CONSTANT from "../../../utils/APP_CONSTANT";
+ import APP_CONSTANT from "../../../utils/APP_CONSTANT";
 import IProps from "../../IProps";
 import TabsModel from '../models';
 

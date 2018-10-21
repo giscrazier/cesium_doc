@@ -1,5 +1,4 @@
 const APP_CONSTANT = {
-    // arcgis js root
-    PROJECT_NAME: process.env.REACT_APP_PROJECT_NAME || "",
+    PROJECT_NAME: '/cesium_doc/build',
 };
 export default APP_CONSTANT;
