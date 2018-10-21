@@ -5,6 +5,7 @@ import { Tabs } from 'antd';
 // import {TabPaneProps} from "antd/lib/tabs";
 import {inject, observer} from "mobx-react";
 import * as React from 'react';
+import APP_CONSTANT from "../../../utils/APP_CONSTANT";
 import IProps from "../../IProps";
 import TabsModel from '../models';
 
@@ -61,7 +62,7 @@ class TabsPage extends React.Component<ITabs> {
                 {
                     path.map(
                     p => <TabPane tab={p.replace(".html","")} key={p.replace(".html","")} closable={true}>
-                        <iframe src={(p.startsWith("http://") || p.startsWith("https://"))?p:'./pages/'+p} style={{width: '100%', height: 'calc(100vh - 130px)', borderWidth: 0}}/>
+                        <iframe src={(p.startsWith("http://") || p.startsWith("https://"))?p:APP_CONSTANT.PROJECT_NAME+'/pages/'+p} style={{width: '100%', height: 'calc(100vh - 130px)', borderWidth: 0}}/>
                     </TabPane>)
                 }
             </Tabs>
