@@ -61,7 +61,7 @@ class TabsPage extends React.Component<ITabs> {
                 {
                     path.map(
                     p => <TabPane tab={p.replace(".html","")} key={p.replace(".html","")} closable={true}>
-                        <iframe src={(p.startsWith("http://") || p.startsWith("https://"))?p:'/pages/'+p} style={{width: '100%', height: 'calc(100vh - 130px)', borderWidth: 0}}/>
+                        <iframe src={(p.startsWith("http://") || p.startsWith("https://"))?p:'./pages/'+p} style={{width: '100%', height: 'calc(100vh - 130px)', borderWidth: 0}}/>
                     </TabPane>)
                 }
             </Tabs>

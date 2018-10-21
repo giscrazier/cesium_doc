@@ -237,7 +237,16 @@ export default class BasicLayout extends React.Component<IBasicLayout> {
         });
 
         if (this.props.global.searchStr.length > 0) {
-            menu = flatMenu.filter((f:IMenu)=>f.path.startsWith(this.props.global.searchStr));
+            // flatMenu.forEach((f:IMenu)=>console.log(f.path));
+            // menu = flatMenu.filter((f:IMenu)=>(f.children && f.path.startsWith(this.props.global.searchStr)));
+            const menus2: any[] = [];
+            const reg = new RegExp("^"+this.props.global.searchStr, 'i');
+            menu.forEach((m:IMenu)=>{
+                // @ts-ignore
+                const cs = m.children.filter(c=>reg.test(c.path));
+                menus2.push(...cs);
+            });
+            menu = menus2;
         }
 
         return (

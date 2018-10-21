@@ -60,8 +60,6 @@ export const getMeunMatchKeys = (flatMenu: IMenu[], path: string) => {
     });
 };
 
-/*@inject("tabs")
-@observer*/
 class LeftSideBar extends React.Component<ILeftSideBar> {
     public static defaultProps = {
         fixed: true,
